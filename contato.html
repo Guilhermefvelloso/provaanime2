@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contato</title>
+</head>
+<body>
+
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="detalhe.html">Detalhe</a>
+        <a href="episodios.html">Episódios</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+     <!-- Botão de alternância de tema -->
+     <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+
+    
+    <section class="formulario">
+        <div class="interface">
+            <h2 class="titulo">CONTATO </h2>
+
+            <form id="form-contato">
+                <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
+                <input type="text" name="celular" id="celular" placeholder="Seu celular:">
+                <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
+                <div class="btn-enviar">
+                    <input type="submit" value="ENVIAR">
+                </div>
+            </form>
+            
+            <!-- Mensagem de sucesso -->
+            <div id="mensagem-sucesso" style="display:none;">
+                <p>Cadastro concluído com sucesso! Obrigado pelo seu contato.</p>
+            </div>
+            
+        </div><!--interface-->
+    </section><!--formulario-->
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="imagens/" alt="">
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/guilhermefvelloso/" target="_blank">
+                            <button><i class="bi bi-instagram"></i></button>
+                        </a>
+                        <a href="https://github.com/Guilhermefvelloso" target="_blank">
+                            <button><i class="bi bi-github"></i></button>
+                        </a>
+                        <a href="https://x.com/Neon21Y" target="_blank">
+                            <button><i class="bi bi-twitter"></i></button>
+                        </a>
+                    </div><!--btn-social-->
+                    
+                </div>
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:pbiguixd@gmail.com">pbiguixd@gmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html>
